@@ -1,4 +1,4 @@
-window.addEventListener("load", () =>{
+window.addEventListener("load",  () =>{
     const form = document.querySelector("#newTaskForm");
     const input = document.querySelector("#newTaskInput");
     const listElement = document.querySelector("#tasks");
@@ -9,6 +9,7 @@ window.addEventListener("load", () =>{
 
         const task = input.value;
         if(!task){
+            saveData(task);
             alert("Kindly input what you intend to do")
             return ;
         }
@@ -26,8 +27,9 @@ window.addEventListener("load", () =>{
         taskItemContentInput.value = task; 
         taskItemContentInput.setAttribute("readonly", "readonly");
         taskItemContent.appendChild(taskItemContentInput);
+        
 
-            //  
+            // Create actions buttons
         const taskItemActions = document.createElement("div");
         taskItemActions.classList.add("actions");
       
@@ -50,8 +52,10 @@ window.addEventListener("load", () =>{
 
         // Append the task item to the list element
         listElement.appendChild(taskItem);
+        
 
         input.value = "";
+        
          
         // Create the edit button
         taskItemActionsEdit.addEventListener("click", () =>{
@@ -69,38 +73,9 @@ window.addEventListener("load", () =>{
         taskItemActionsRemove.addEventListener("click", () => {
             listElement.removeChild(taskItem);
         })
+       
+
     })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   
 
 })
