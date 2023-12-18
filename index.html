@@ -7,8 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/index.css" />
@@ -19,23 +21,13 @@
       <h1>ToDo List</h1>
       <form id="newTaskForm">
         <input type="text" id="newTaskInput" placeholder="I want to..." />
-        <input type="submit" id="newTaskSubmit" value="Add task" />
+        <input type="submit" id="newTaskSubmit" value="Add Task" />
       </form>
     </header>
     <main>
       <section class="taskList">
         <h2>ToDo</h2>
-        <div id="tasks">
-          <div class="task">
-            <div class="content">
-              <input type="text" class="text" value="My task" readonly />
-            </div>
-            <div class="actions">
-              <button class="edit">edit</button>
-              <button class="remove">remove</button>
-            </div>
-          </div>
-        </div>
+        <div id="tasks"></div>
       </section>
     </main>
     <script src="/index.js"></script>

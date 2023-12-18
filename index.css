@@ -21,7 +21,7 @@ body{
     min-height: 100vh;
     background: linear-gradient(to left, var(--darkest), var(--darker));
     color: #fff;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 header{
     padding: 4rem 1rem;
@@ -46,10 +46,11 @@ button{
     background: none;
 }
 #newTaskInput{
-    flex: 1 1 0;
+    flex: 1;
     padding: 1rem;
     background: var(--darker);
     margin-right: 1rem;
+    border-radius: 1rem;
     color: var(--light);
     font-size: 1.25rem;
 }
